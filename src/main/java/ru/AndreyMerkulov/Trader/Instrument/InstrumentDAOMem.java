@@ -1,7 +1,5 @@
 package ru.AndreyMerkulov.Trader.Instrument;
 
-import lombok.AllArgsConstructor;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -48,5 +46,5 @@ public class InstrumentDAOMem implements InstrumentDAO {
     public void upd(Instrument instrument){
         int i = getIndex(instrument.getSymbol());
         list.set(i,instrument);
-    };
+    }
 }
