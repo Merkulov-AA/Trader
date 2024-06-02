@@ -4,7 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.stereotype.Component;
 import org.aspectj.lang.annotation.Aspect;
 
@@ -20,7 +19,7 @@ public class LoggingInstrumentAspect {
     @Before("controllerMethods()")
     public void logBefore(JoinPoint joinPoint) {
         log.info(joinPoint.getSignature().toString());
-        System.out.println(joinPoint.getSignature());
+        Object[] args = joinPoint.getArgs();
         for (Object arg : args) {
             log.info(arg.toString());
         }
