@@ -45,6 +45,8 @@ public class InstrumentDAOMem implements InstrumentDAO {
 
     public void upd(Instrument instrument){
         int i = getIndex(instrument.getSymbol());
+        if (i<0)
+            throw new InstrumentNotFoundException("Instrument not found");
         list.set(i,instrument);
     }
 }
