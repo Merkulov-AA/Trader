@@ -8,6 +8,7 @@ class TraderApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }
