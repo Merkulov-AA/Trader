@@ -1,4 +1,4 @@
-package ru.AndreyMerkulov.Trader.Instrument;
+package ru.AndreyMerkulov.Trader.GlobAspect;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
@@ -10,8 +10,7 @@ import org.aspectj.lang.annotation.Aspect;
 @Component
 @Aspect
 @Slf4j
-public class LoggingInstrumentAspect {
-
+public class LoggingRestControllerAspect {
 
     @Pointcut("within(@org.springframework.web.bind.annotation.RestController *)")
     public void controllerMethods() {}

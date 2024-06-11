@@ -1,4 +1,4 @@
-package ru.AndreyMerkulov.Trader;
+package ru.AndreyMerkulov.Trader.GlobConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

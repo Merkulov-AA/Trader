@@ -1,4 +1,4 @@
-package ru.AndreyMerkulov.Trader.Instrument;
+package ru.AndreyMerkulov.Trader.Instrument.Exception;
 
 public class InstrumentFoundException extends RuntimeException{
     public InstrumentFoundException(String message) {
