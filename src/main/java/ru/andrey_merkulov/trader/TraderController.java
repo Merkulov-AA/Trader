@@ -1,4 +1,4 @@
-package ru.AndreyMerkulov.Trader;
+package ru.andrey_merkulov.trader;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;

@@ -1,4 +1,4 @@
-package ru.AndreyMerkulov.Trader.Instrument.Service;
+package ru.andrey_merkulov.trader.instrument.Service;
 
 
 import org.junit.jupiter.api.Test;
@@ -7,9 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import ru.AndreyMerkulov.Trader.Instrument.Instrument;
-import ru.AndreyMerkulov.Trader.Instrument.Repository.InstrumentDAO;
-import ru.AndreyMerkulov.Trader.Instrument.Serveice.InstrumentService;
+import ru.andrey_merkulov.trader.instrument.Instrument;
+import ru.andrey_merkulov.trader.instrument.Repository.InstrumentDAO;
+import ru.andrey_merkulov.trader.instrument.Serveice.InstrumentService;
 
 
 import java.util.ArrayList;

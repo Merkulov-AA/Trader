@@ -1,10 +1,10 @@
-package ru.AndreyMerkulov.Trader.GlobExceptionHandler;
+package ru.andrey_merkulov.trader.glob.exceptionHandler;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import ru.AndreyMerkulov.Trader.Instrument.Exception.InstrumentFoundException;
-import ru.AndreyMerkulov.Trader.Instrument.Exception.InstrumentNotFoundException;
+import ru.andrey_merkulov.trader.instrument.Exception.InstrumentFoundException;
+import ru.andrey_merkulov.trader.instrument.Exception.InstrumentNotFoundException;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {

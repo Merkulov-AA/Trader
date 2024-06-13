@@ -1,4 +1,4 @@
-package ru.AndreyMerkulov.Trader;
+package ru.andrey_merkulov.trader;
 
 import org.springframework.stereotype.Service;
 

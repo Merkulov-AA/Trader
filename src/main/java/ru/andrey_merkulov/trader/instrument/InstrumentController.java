@@ -1,8 +1,8 @@
-package ru.AndreyMerkulov.Trader.Instrument;
+package ru.andrey_merkulov.trader.instrument;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import ru.AndreyMerkulov.Trader.Instrument.Serveice.InstrumentService;
+import ru.andrey_merkulov.trader.instrument.Serveice.InstrumentService;
 
 import java.util.List;
 

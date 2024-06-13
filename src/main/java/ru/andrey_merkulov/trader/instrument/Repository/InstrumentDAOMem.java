@@ -1,9 +1,9 @@
-package ru.AndreyMerkulov.Trader.Instrument.Repository;
+package ru.andrey_merkulov.trader.instrument.Repository;
 
 import org.springframework.stereotype.Repository;
-import ru.AndreyMerkulov.Trader.Instrument.Instrument;
-import ru.AndreyMerkulov.Trader.Instrument.Exception.InstrumentFoundException;
-import ru.AndreyMerkulov.Trader.Instrument.Exception.InstrumentNotFoundException;
+import ru.andrey_merkulov.trader.instrument.Instrument;
+import ru.andrey_merkulov.trader.instrument.Exception.InstrumentFoundException;
+import ru.andrey_merkulov.trader.instrument.Exception.InstrumentNotFoundException;
 
 import java.util.ArrayList;
 import java.util.List;

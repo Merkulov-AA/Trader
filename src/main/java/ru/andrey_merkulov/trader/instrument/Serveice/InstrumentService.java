@@ -1,7 +1,7 @@
-package ru.AndreyMerkulov.Trader.Instrument.Serveice;
+package ru.andrey_merkulov.trader.instrument.Serveice;
 
 import org.springframework.stereotype.Service;
-import ru.AndreyMerkulov.Trader.Instrument.Instrument;
+import ru.andrey_merkulov.trader.instrument.Instrument;
 
 import java.util.List;
 

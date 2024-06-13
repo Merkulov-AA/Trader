@@ -1,10 +1,10 @@
-package ru.AndreyMerkulov.Trader.Instrument.Serveice;
+package ru.andrey_merkulov.trader.instrument.Serveice;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
-import ru.AndreyMerkulov.Trader.Instrument.Instrument;
-import ru.AndreyMerkulov.Trader.Instrument.Repository.InstrumentDAO;
+import ru.andrey_merkulov.trader.instrument.Instrument;
+import ru.andrey_merkulov.trader.instrument.Repository.InstrumentDAO;
 
 import java.util.List;
 

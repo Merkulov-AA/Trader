@@ -1,12 +1,12 @@
-package ru.AndreyMerkulov.Trader.Instrument.Repository;
+package ru.andrey_merkulov.trader.instrument.Repository;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
-import ru.AndreyMerkulov.Trader.Instrument.Exception.InstrumentNotFoundException;
-import ru.AndreyMerkulov.Trader.Instrument.Instrument;
+import ru.andrey_merkulov.trader.instrument.Exception.InstrumentNotFoundException;
+import ru.andrey_merkulov.trader.instrument.Instrument;
 
 import java.util.List;
 import java.util.Optional;
