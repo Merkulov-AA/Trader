@@ -12,7 +12,7 @@ import java.util.List;
 
 @AllArgsConstructor
 @Service
-public class InstrumentServiceJPAImpl implements InstrumentService{
+public class InstrumentServiceImpl implements InstrumentService{
 
     private final InstrumentRepository instrumentDAO;
     private final InstrumentMapper instrumentMapper;

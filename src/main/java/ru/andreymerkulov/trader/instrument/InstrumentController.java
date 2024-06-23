@@ -13,7 +13,6 @@ import java.util.List;
 @AllArgsConstructor
 public class InstrumentController {
 
-    @Qualifier("instrumentServiceJPAImpl")
     private final InstrumentService service;
 
     @GetMapping
