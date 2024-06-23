@@ -8,3 +8,5 @@ spring:
     username: andrew
     password: pwd
     driver-class-name: org.postgresql.Driver
+  #profiles:
+    #active: jpa
