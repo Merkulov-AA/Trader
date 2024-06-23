@@ -12,7 +12,6 @@ import java.util.List;
 
 @AllArgsConstructor
 @Service
-//@Profile("jpa")
 public class InstrumentServiceJPAImpl implements InstrumentService{
 
     private final InstrumentRepository instrumentDAO;
@@ -29,14 +28,13 @@ public class InstrumentServiceJPAImpl implements InstrumentService{
                 .orElseThrow(() -> new InstrumentNotFoundException("Instrument not found"));
         return instrumentMapper.instrumentToInstrumentDto(instrument);
     }
-    public void add(InstrumentDto instrumentDto){;
+    public void add(InstrumentDto instrumentDto){
         instrumentDAO.save(instrumentMapper.instrumentDtoToInstrument(instrumentDto));
     }
     public void del(String symbol){
         instrumentDAO.deleteById(symbol);
     }
     public void upd(InstrumentDto instrumentDto){
-        Instrument instrument = new Instrument();
         instrumentDAO.save(instrumentMapper.instrumentDtoToInstrument(instrumentDto));
     }
 
