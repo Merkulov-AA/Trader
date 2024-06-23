@@ -6,7 +6,7 @@ import ru.andreymerkulov.trader.instrument.Instrument;
 import ru.andreymerkulov.trader.instrument.dto.InstrumentDto;
 import ru.andreymerkulov.trader.instrument.exception.InstrumentNotFoundException;
 import ru.andreymerkulov.trader.instrument.mapper.InstrumentMapper;
-import ru.andreymerkulov.trader.instrument.repository.InstrumentDAOJPA;
+import ru.andreymerkulov.trader.instrument.repository.InstrumentRepository;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ import java.util.List;
 //@Profile("jpa")
 public class InstrumentServiceJPAImpl implements InstrumentService{
 
-    private final InstrumentDAOJPA instrumentDAO;
+    private final InstrumentRepository instrumentDAO;
     private final InstrumentMapper instrumentMapper;
 
     public List<InstrumentDto> getAll() {

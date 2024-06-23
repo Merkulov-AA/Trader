@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: andrew
+      changes:
+        - createTable:
+            tableName: instrument
+            columns:
+              - column:
+                  name: symbol
+                  type: text
+                  constraints:
+                    primaryKeyName: pk_instrument
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: pricescale
+                  type: double precision
+                  constraints:
+                    nullable: false
+              - column:
+                  name: minorderqty
+                  type: double precision
+                  constraints:
+                    nullable: false
