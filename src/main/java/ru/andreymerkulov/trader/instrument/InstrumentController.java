@@ -1,7 +1,6 @@
 package ru.andreymerkulov.trader.instrument;
 
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 import ru.andreymerkulov.trader.instrument.dto.InstrumentDto;
 import ru.andreymerkulov.trader.instrument.serveice.InstrumentService;
@@ -13,7 +12,6 @@ import java.util.List;
 @AllArgsConstructor
 public class InstrumentController {
 
-    @Qualifier("instrumentServiceJPAImpl")
     private final InstrumentService service;
 
     @GetMapping

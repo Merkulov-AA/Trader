@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: andrew
+      changes:
+        - sql:
+            sql: ALTER TABLE public.instrument OWNER TO andrew;
