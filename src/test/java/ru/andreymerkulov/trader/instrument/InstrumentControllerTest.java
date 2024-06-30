@@ -34,7 +34,6 @@ class InstrumentControllerTest {
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-
     @Test
     @WithMockUser
     void getAll() throws Exception {
