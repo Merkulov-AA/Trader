@@ -8,7 +8,7 @@ databaseChangeLog:
             columns:
               - column:
                   name: symbol
-                  type: text
+                  type: varchar(100)
                   constraints:
                     primaryKeyName: pk_instrument
                     primaryKey: true
