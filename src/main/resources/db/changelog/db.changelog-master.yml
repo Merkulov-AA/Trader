@@ -3,3 +3,7 @@ databaseChangeLog:
       file: db/changelog/changeset-1/create-instrument-table.yml
   - include:
       file: db/changelog/changeset-1/alter-instrument-table.yml
+  - include:
+      file: db/changelog/changeset-2/create-user-table.yml
+  - include:
+      file: db/changelog/changeset-2/insert-user-table.yml

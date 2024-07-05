@@ -1,0 +1,33 @@
+databaseChangeLog:
+  - changeSet:
+      id: 4
+      author: andrew
+      changes:
+        - insert:
+            tableName: tuser
+            columns:
+              - column:
+                  name: username
+                  value: "admin"
+              - column:
+                  name: password
+                  value: "pwd"
+              - column:
+                  name: roles
+                  value: "ADMIN,USER"
+  - changeSet:
+      id: 5
+      author: andrew
+      changes:
+        - insert:
+            tableName: tuser
+            columns:
+              - column:
+                  name: username
+                  value: "user"
+              - column:
+                  name: password
+                  value: "pwd"
+              - column:
+                  name: roles
+                  value: "USER"
