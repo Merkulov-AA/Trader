@@ -1,0 +1,38 @@
+
+services:
+  postgres:
+    image: postgres
+    container_name: postgres-trader
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - trader-network
+
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trader
+    depends_on:
+      - postgres
+    ports:
+      - "8080:8080"
+    networks:
+      - trader-network
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-trader:5432/postgres
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+
+volumes:
+  pgdata:
+
+networks:
+  trader-network:
