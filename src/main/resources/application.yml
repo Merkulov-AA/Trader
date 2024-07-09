@@ -4,11 +4,12 @@ spring:
   #autoconfigure:
     #exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
   datasource:
-    url: jdbc:postgresql://localhost:5432/andrewdb
-    username: andrew
-    password: pwd
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
     driver-class-name: org.postgresql.Driver
   #profiles:
     #active: jpa
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.yml
+

@@ -1,6 +1,7 @@
 package ru.andreymerkulov.trader.instrument;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -8,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "Instrument")
 @Entity
 @NoArgsConstructor
+@AllArgsConstructor
 public class Instrument {
     @Id
     String symbol;

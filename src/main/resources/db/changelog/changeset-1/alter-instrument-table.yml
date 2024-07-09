@@ -2,6 +2,10 @@ databaseChangeLog:
   - changeSet:
       id: 2
       author: andrew
+      preConditions:
+        - onFail: CONTINUE
+        - dbms:
+            type: postgresql
       changes:
         - sql:
             sql: ALTER TABLE public.instrument OWNER TO andrew;
